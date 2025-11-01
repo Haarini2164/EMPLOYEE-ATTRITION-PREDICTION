@@ -186,7 +186,7 @@ EMPLOYEE-ATTRITION-PREDICTION/
 
 ![Feature Analysis](feature_analysis.png)
 
-### ⭐ Feature Importance
+### ⭐ Best model
 
 ![Feature Importance](feature_importance.png)
 
