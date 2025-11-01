@@ -1,174 +1,264 @@
-# EMPLOYEE-ATTRITION-PREDICTION
-Machine Learning project analyzing Employee Attrition using 7 models and Streamlit dashboard.
-# 💼 EMPLOYEE ATTRITION PREDICTION & ANALYTICS DASHBOARD  
+# 👩‍💼 Employee Attrition Predictive Analytics Dashboard
 
-### 🔍 Predicting Employee Turnover using Machine Learning and Streamlit  
-
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)  
-[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)](https://streamlit.io/)  
-[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?logo=kaggle)](https://www.kaggle.com/code/haarinisk22mid0231/predictive/)  
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)](https://streamlit.io/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?logo=kaggle)](https://www.kaggle.com/code/haarinisk22mid0231/predictive/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
----
-
-## 📘 Overview  
-
-This project predicts **employee attrition** — whether an employee is likely to leave the organization — using advanced **Machine Learning models** and a powerful **interactive Streamlit dashboard**.  
-
-A total of **seven models** were built and evaluated in the [Kaggle Notebook](https://www.kaggle.com/code/haarinisk22mid0231/predictive/).  
-Among them, **Logistic Regression** achieved the best performance and powers the final dashboard.
+An **interactive analytics system** for predicting employee attrition, exploring workforce trends, and visualizing HR insights using **Machine Learning** and **Streamlit Dashboard**.
 
 ---
 
-## 📂 Dataset  
-
-- **Dataset:** `WA_Fn-UseC_-HR-Employee-Attrition.csv`  
-- **Source:** IBM HR Analytics Dataset  
-- **Records:** 1470 employees  
-- **Features:** 35 attributes  
-- **Target Variable:** `Attrition` (`Yes` / `No`)
-
----
-
-## 🧠 Models Implemented  
-
-| Model | Accuracy | Key Observation |
-|--------|-----------|----------------|
-| Logistic Regression | ✅ **87%** | Best performing, interpretable |
-| Random Forest | 85% | Good, slightly overfit |
-| XGBoost | 86% | Stable and robust |
-| Decision Tree | 82% | Simple, less generalizable |
-| SVM | 84% | Performs well on scaled data |
-| KNN | 83% | Sensitive to feature scaling |
-| Naive Bayes | 80% | Lower accuracy on numeric data |
-
-> 🏆 **Logistic Regression** is selected for the final Streamlit dashboard.
+## 📋 Table of Contents
+- [Overview](#-overview)
+- [Academic Context](#-academic-context)
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Model Performance](#-model-performance)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
-## ⚙️ Methodology  
+## 🎯 Overview
 
-1. **Data Preprocessing**  
-   - Encoded categorical variables with `LabelEncoder`  
-   - Scaled numerical features using `StandardScaler`  
+Employee attrition (turnover) is a major challenge for organizations that seek to retain skilled workers.  
+This project applies **machine learning** and **predictive analytics** to forecast attrition risk, analyze factors influencing turnover, and visualize workforce data trends.
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Correlation heatmaps, distribution plots, attrition ratio  
-
-3. **Model Training & Evaluation**  
-   - Trained 7 ML models using `scikit-learn`  
-   - Evaluated using Accuracy, F1-Score, ROC-AUC  
-
-4. **Deployment**  
-   - Developed an **interactive Streamlit dashboard** for visualization and prediction  
+The dashboard is powered by **Logistic Regression**, the best-performing model among seven tested algorithms, providing interpretable insights into attrition factors.
 
 ---
 
-## 📈 Key Insights  
+## 🎓 Academic Context
 
-- High attrition observed in employees with **low monthly income** and **short tenure**.  
-- **Work-life balance** and **job satisfaction** are crucial in retention.  
-- Logistic Regression provided consistent and interpretable results across features.
+This project was developed as part of a **Machine Learning and Predictive Analytics** coursework.  
+It demonstrates the practical use of:
+
+- Supervised learning (classification)
+- Feature importance analysis
+- HR data visualization
+- Predictive modeling
+- Streamlit web deployment
 
 ---
 
-## 💻 Streamlit Dashboard  
+## 🧩 Features
 
-### 🧭 Dashboard Overview  
-- View dataset and feature distribution  
-- Compare attributes against attrition rate  
-- Explore feature importance  
-- Predict employee attrition interactively  
+### 📊 1. Statistical Analysis Module
+- View attrition rates by department, gender, and age group  
+- Explore distributions of key HR attributes  
+- Generate correlation heatmaps and demographic breakdowns  
 
-### 🖥️ Run Locally  
+### 🔮 2. Machine Learning Prediction Module
+- Train and compare **7 classification models**  
+- Automatically identify the **best-performing model**  
+- View performance metrics: Accuracy, F1, ROC-AUC  
 
+### 💼 3. Employee Attrition Dashboard
+- Upload HR dataset (CSV)  
+- Compare multiple features interactively  
+- Explore top attrition factors visually  
+- Predict whether an employee is likely to leave  
+
+### 📈 4. Visualization Suite
+- Confusion Matrix Heatmap  
+- ROC Curve  
+- Top 10 Important Features  
+- Boxplots and Trend Comparisons  
+
+---
+
+## 🛠️ Technology Stack
+
+### Backend
+- **Python 3.10+**
+- **Pandas**, **NumPy**
+- **Scikit-learn** (Machine Learning)
+- **Matplotlib**, **Seaborn**, **Plotly** (Visualization)
+
+### Frontend
+- **Streamlit** - Web-based dashboard interface
+- **HTML / CSS** (built-in with Streamlit)
+
+### Machine Learning Models
+1. Logistic Regression ⭐ (Best Model)
+2. Random Forest
+3. XGBoost
+4. Decision Tree
+5. SVM
+6. KNN
+7. Naive Bayes
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+- Python 3.10 or higher  
+- pip package manager  
+
+### Step 1: Clone Repository
 ```bash
-# Clone the repository
 git clone https://github.com/Haarini2164/EMPLOYEE-ATTRITION-PREDICTION.git
-
-# Navigate to folder
 cd EMPLOYEE-ATTRITION-PREDICTION
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run Streamlit app
-streamlit run logistic_regression_dashboard.py
 ````
 
-🌐 **Local Dashboard URL:** [http://localhost:8501/](http://localhost:8501/)
-📊 **Kaggle Notebook:** [View Predictive Analysis Notebook](https://www.kaggle.com/code/haarinisk22mid0231/predictive/)
+### Step 2: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Run Streamlit App
+
+```bash
+streamlit run logistic_regression_dashboard.py
+```
+
+The dashboard will open at [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📂 Repository Structure
+## 🚀 Usage
+
+1. **Upload Dataset**
+
+   * Upload `WA_Fn-UseC_-HR-Employee-Attrition.csv`
+   * Dataset auto-loads and displays preview
+
+2. **Explore Data**
+
+   * Use sidebar filters to explore attributes
+   * View attrition by department, job role, or satisfaction
+
+3. **Model Analysis**
+
+   * Evaluate all models trained in the notebook
+   * Compare metrics and identify top performers
+
+4. **Interactive Predictions**
+
+   * Input new employee features
+   * Dashboard predicts likelihood of attrition
+
+---
+
+## 📁 Project Structure
 
 ```
 EMPLOYEE-ATTRITION-PREDICTION/
 │
-├── logistic_regression_dashboard.py       # Streamlit dashboard code
-├── predictive.ipynb                       # Kaggle notebook (7 ML models)
-├── WA_Fn-UseC_-HR-Employee-Attrition.csv  # Dataset
-├── requirements.txt                       # Dependencies
-└── README.md                              # Project documentation
+├── logistic_regression_dashboard.py      # Streamlit dashboard code
+├── predictive.ipynb                      # Kaggle notebook (7 ML models)
+├── WA_Fn-UseC_-HR-Employee-Attrition.csv # Dataset
+├── requirements.txt                      # Dependencies
+└── README.md                             # Documentation
 ```
 
 ---
 
-## 📸 Dashboard Preview
+## 📊 Model Performance
 
-*(Add screenshots here once uploaded)*
-![Dashboard Screenshot](images/dashboard_1.png)
-![Feature Analysis](images/feature_analysis.png)
-
----
-
-## 🧰 Tech Stack
-
-* **Language:** Python
-* **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
-* **Platform:** Jupyter Notebook, Streamlit, Kaggle
-* **Deployment:** Local / Streamlit Cloud
+| Model               | Accuracy  | F1 Score  | ROC-AUC   |
+| ------------------- | --------- | --------- | --------- |
+| Logistic Regression | **0.874** | **0.493** | **0.805** |
+| Decision Tree       | 0.847     | 0.210     | 0.711     |
+| Random Forest       | 0.837     | 0.111     | 0.791     |
+| XGBoost             | 0.863     | 0.411     | 0.778     |
+| SVM                 | 0.863     | 0.333     | 0.810     |
+| KNN                 | 0.840     | 0.078     | 0.699     |
+| Gradient Boosting   | 0.833     | 0.222     | 0.781     |
 
 ---
 
-## 🏆 Results
+## 📸 Screenshots
 
-| Metric   | Score |
-| -------- | ----: |
-| Accuracy |  0.87 |
-| F1 Score | 0.872 |
-| ROC-AUC  |  0.93 |
+### 🖥️ Dashboard Overview
 
-📊 **Feature Importance Visualization:**
-![Feature Importance](images/feature_importance.png)
+![Dashboard Screenshot](dashboard_1.png)
 
----
+### 📊 Feature Analysis
 
-## 🚀 Future Enhancements
+![Feature Analysis](feature_analysis.png)
 
-* Deploy dashboard on **Streamlit Cloud / Hugging Face Spaces**
-* Integrate **real-time employee data**
-* Add **explainable AI (SHAP)** for interpretability
+### ⭐ Feature Importance
+
+![Feature Importance](feature_importance.png)
+
+> 💡 Each dashboard section provides an interactive, visual interpretation of employee attrition data, allowing HR professionals to identify key retention strategies.
 
 ---
 
-## 👩‍💻 Author
+## 🤝 Contributing
 
-**Haarini S.K.**
-Final Year B.E - Computer Science and Engineering
-📍 *Employee Attrition Prediction using Machine Learning and Streamlit*
+Contributions are welcome!
 
-🔗 **GitHub:** [Haarini2164](https://github.com/Haarini2164)
-📊 **Kaggle:** [haarinisk22mid0231](https://www.kaggle.com/code/haarinisk22mid0231/predictive/)
+1. Fork the repository
+2. Create your feature branch
+
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes
+
+   ```bash
+   git commit -m "Add: your feature description"
+   ```
+4. Push to branch
+
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a Pull Request
+
+### Development Guidelines
+
+* Follow PEP 8 code style
+* Use meaningful variable names
+* Add comments for clarity
+* Test before submitting PR
 
 ---
 
-## 📜 License
+## 🐛 Known Issues & Limitations
 
-This project is released under the [MIT License](LICENSE).
+* Limited to static dataset (no live HR database)
+* Predictions depend on quality of input data
+* Dashboard optimized for desktop screens
 
 ---
 
-✨ *“Predict to retain — empowering HR with data-driven insights.”*
+## 📄 License
+
+This project is licensed under the **MIT License** – see the LICENSE file for details.
+
+```
+MIT License  
+Copyright (c) 2025 Haarini  
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+```
+
+---
+
+## 📧 Contact
+
+**Author:** Haarini S.K.
+📩 Email: [haarinisk22mid0231@gmail.com](mailto:haarinisk22mid0231@gmail.com)
+🌐 GitHub: [@Haarini2164](https://github.com/Haarini2164)
+📊 Kaggle: [haarinisk22mid0231](https://www.kaggle.com/code/haarinisk22mid0231/predictive/)
+
+**Project Link:**
+🔗 [https://github.com/Haarini2164/EMPLOYEE-ATTRITION-PREDICTION](https://github.com/Haarini2164/EMPLOYEE-ATTRITION-PREDICTION)
+
+---
+
+⭐ **If you found this project useful, please give it a star!**
+*Built with ❤️ to empower HR decision-making through data-driven insights.*
 
