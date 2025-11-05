@@ -169,7 +169,7 @@ EMPLOYEE-ATTRITION-PREDICTION/
 | Logistic Regression | **0.874** | **0.493** | **0.805** |
 | Decision Tree       | 0.847     | 0.210     | 0.711     |
 | Random Forest       | 0.837     | 0.111     | 0.791     |
-| XGBoost             | 0.863     | 0.411     | 0.778     |
+| XGBoost             | 0.903     | 0.411     | 0.778     |
 | SVM                 | 0.863     | 0.333     | 0.810     |
 | KNN                 | 0.840     | 0.078     | 0.699     |
 | Gradient Boosting   | 0.833     | 0.222     | 0.781     |
